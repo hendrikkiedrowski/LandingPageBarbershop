@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtoV1k9HsCkgHc9oD7tHD9LHdC1-n7IFc"></script>
+    <title>ROWDY</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-md-6 text-xs-center">
+                <a href="#"><img src="images/logo1.png" class="logo" alt="Rowdy Ku'damm"></a>
+            </div>
+            <div class="col-md-6 text-xs-center">
+                <a href="#"><img src="images/logo2.png" class="logo" alt="Rowdy Prenzlberg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 map">
+
+                <div style='overflow:hidden;'>
+                    <div id='gmap_canvas1' class="text-xs-center" style='height:30vh;width:40vw;'></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: 40vw!important;
+                            background: none!important
+                        }
+                    </style>
+                </div>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 15,
+                            center: new google.maps.LatLng(52.501637, 13.328783),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas1'), myOptions);
+                        marker1 = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(52.501637, 13.328783)
+                        });
+                        infowindow1 = new google.maps.InfoWindow({
+                            content: '<strong>Rowdy Barbers</strong><br>Berlin, Germany Meinekestr. 6<br>'
+                        });
+                        google.maps.event.addListener(marker1, 'click', function() {
+                            infowindow1.open(map, marker1);
+                        });
+                        //infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="col-md-6 map">
+                <div style='overflow:hidden;'>
+                    <div id='gmap_canvas2' style='height:30vh;width:40vw;'></div>
+
+                    <style>
+                        #gmap_canvas img {
+                            max-width: 40vw!important;
+                            background: none!important
+                        }
+                    </style>
+                </div>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 15,
+                            center: new google.maps.LatLng(52.5372, 13.418229999999994),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas2'), myOptions);
+                        marker2 = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(52.5372, 13.418229999999994)
+                        });
+                        infowindow2 = new google.maps.InfoWindow({
+                            content: '<strong>Rowdy Barber</strong><br>Kollwitzstraße 71, 10435 Berlin<br>'
+                        });
+                        google.maps.event.addListener(marker2, 'click', function() {
+                            infowindow2.open(map, marker2);
+                        });
+
+                        //infowindow.closed(map, marker);
+
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/3253bd5bda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

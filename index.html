@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ROWDY</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid loader">
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        </div>
+        <div class="container-fluid content hidden-sm-down">
+            <div class="row justify-content-around">
+                <div class="col-md-6 text-xs-center">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>ROWDY Barbers <gold>Exclusive</gold> <br> Berlin-Charlottenburg</h1>
+                            <hr class="abovepic">
+                        </div>
+                        <div class="col-xs-12 flipcard">
+                            <div class="frontimg">
+                                <img src="images/logo1.jpg" class="logo" alt="Rowdy Ku'damm">
+                            </div>
+                            <div class="cardnav">
+                                <div class="backimg">
+                                  <img src="images/logokudamm.png" class="backlogo" alt="Rowdy Kudamm Logo">
+                                  <div class="btn-group" role="group">
+                                      <button type="button" data-toggle="modal" data-target="#terminkudamm" class="btn btn-primary">Termin Buchen</button>
+                                      <button type="button" onclick="location.href='tel:015233574930';" class="btn btn-primary"><i class="fa fa-phone-square" aria-hidden="true"></i> 0152 33574930</button>
+                                  </div>
+                                    <hr class="links">
+                                    <div class="animsition">
+                                        <a href="http://rowdy-barbers.berlin"><h5>rowdy-barbers.berlin</h5></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 belowpic">
+                            <div class="row">
+                                <div class="col-xs-10 offset-xs-1 contact">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/4cixXfhmnq72"><h5><i class="fa fa-road"></i> Meinekestr. 6</h5></a></li>
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/4cixXfhmnq72"><h5><i class="fa fa-home"></i> 10719 Berlin</h5></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-xs-center">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>ROWDY Barber Shop <br> Berlin-Prenzlauer Berg</h1>
+                            <hr class="abovepic">
+                        </div>
+                        <div class="col-xs-12 flipcard">
+                            <div class="frontimg">
+                                <img src="images/logo2.jpg" class="logo" alt="Rowdy Prenzlberg">
+                            </div>
+                            <div class="cardnav">
+                                <div class="backimg">
+                                  <img src="images/logoprenzlberg.png" class="backlogo" alt="Rowdy Prenzlberg Logo">
+                                  <div class="btn-group" role="group">
+                                      <button type="button" data-toggle="modal" data-target="#terminprenzl" class="btn btn-primary">Termin Buchen</button>
+                                      <button type="button" onclick="location.href='tel:015209866085';" class="btn btn-primary"><i class="fa fa-phone-square" aria-hidden="true"></i> 0152 09866085</button>
+                                  </div>
+                                    <hr class="links">
+                                    <div class="animsition">
+                                        <a href="http://rowdy-barber.berlin" class="animsition-link"><h5>rowdy-barber.berlin</h5></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 belowpic">
+                            <div class="row">
+                                <div class="col-xs-10 offset-xs-1 contact">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/hjbHgADJArs"><h5><i class="fa fa-road"></i> Kollwitzstr. 71</h5></a></li>
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/hjbHgADJArs"><h5><i class="fa fa-home"></i> 10435 Berlin</h5></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-xs-12 bordernav"></div>
+                </div>
+                <div class="row" id="headfootbg">
+                    <div class="col-xs-6 text-xs-left">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#impressum">Impressum</button>
+                    </div>
+
+                    <div class="col-xs-6 text-xs-right">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#shop" id="shop">Shop</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="modal fade" id="impressum" tabindex="-1" role="dialog" aria-labelledby="Impressum" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content impressum">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        <h4 class="modal-title" id="Impressum">Impressum</h4>
+                    </div>
+                    <div class="modal-body">
+                        <span style="font-size: small;">GerTraC GmbH&nbsp;</span><br><span style="font-size: small;">Wöhlertstr. 12-13</span><br><span style="font-size: small;">10115 Berlin</span></h3>
+                        <span style="font-size: small;">Tel:&nbsp;<a href="tel:%2B4930%2064437899" target="_blank">+4930 64437899</a></span><br><span style="font-size: small;">Fax:&nbsp;<a href="tel:%2B4930%2064437898" target="_blank">+4930 64437898</a></span><br>
+                        <span style="font-size: small;">E-Mail:&nbsp;<a href="mailto:pk@gertrac.de" target="_blank">pk@gertrac.de</a></span><br>
+                        <span style="font-size: small;">Geschäftsführer: </span><span style="font-size: small;">Alexander Petrovichev</span><br>
+                        <span style="font-size: small;">Registergericht: Amtsgericht Charlottenburg, HRB 165621</span><br>
+                        <span style="font-size: small;">Umsatzsteuer-IdNr.: DE299413660</span><br><br>
+
+                        <span style="font-size: small;">Datenschutz</span><br>
+                        <span style="font-size: small;">Die Nutzung unserer Webseite ist in der Regel ohne eine Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adresse) erhoben werden, erfolgt dies – soweit es möglich ist– immer auf freiwilliger Basis. Wir geben Ihre Daten ohne Ihre ausdrückliche Zustimmung nicht an Dritte weiter. Außerdem weisen wir Sie darauf hin, dass die Datenübertragung im Internet (wie beispielsweise bei der Kommunikation über E-Mail) Sicherheitslücken aufweisen kann. Denn ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. Wir widersprechen hiermit ausdrücklich der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien. Die Betreiber dieser Seiten behalten sich ausdrücklich vor, im Fall der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, rechtliche Schritte einzuleiten.</span><br><br>
+                        <span style="font-size: small;">Haftung für Inhalte</span><br>
+                        <span style="font-size: small;">Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</span><br>
+                        <p class="normal"> Jeder Mann – jeder Wunsch – ein Ort: "Rowdy"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="terminkudamm" tabindex="-1" role="dialog" aria-labelledby="terminkudamm" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" class="closex">&times;</span>
+            </button>
+                        <h4 class="modal-title closex">ROWDY Barbers</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://widget.timify.com/588c4afa549da60da7adf9cc?lang=de" width="100%" height="350px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="terminprenzl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="closex">&times;</span>
+                        </button>
+                        <h4 class="modal-title closex">ROWDY Barber Shop</h4>
+                    </div>
+                    <div class="modal-body">
+                        <iframe src="https://widget.timify.com/56a3f251c1b2317b0c0b9bf0?lang=de" width="100%" height="500px">123</iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid contentmobile hidden-md-up">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 shop1 text-xs-center">
+                    <div id="Shop1" class="carousel slide" data-ride="carousel1" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#Shop1" data-slide-to="0" class="active"></li>
+                            <li data-target="#Shop1" data-slide-to="1"></li>
+
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid mobilelogo" src="images/logo1mobile.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-xs-12 mobilecontact">
+                                    <h3>ROWDY Barbers <gold>Exclusive</gold> <br> Berlin-Charlottenburg</h3>
+                                    <div class="choicebtn">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" data-toggle="modal" data-target="#terminkudamm" class="btn btn-primary">Termin Buchen</button>
+                                            <button type="button" onclick="location.href='tel:015233574930';" class="btn btn-primary">Shop anrufen</button>
+                                        </div>
+                                    </div>
+                                    <div class="linkwebsite">
+                                        <div class="animsition">
+                                            <a href="http://rowdy-barbers.berlin" class="animsition-link"><h5>rowdy-barbers.berlin</h5></a>
+                                        </div>
+                                    </div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/4cixXfhmnq72"><i class="fa fa-road"></i> Meinekestr. 6</a></li>
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/4cixXfhmnq72"><i class="fa fa-home"></i> 10719 Berlin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 shop2 text-xs-center">
+                    <div id="Shop2" class="carousel slide" data-ride="carousel2" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#Shop2" data-slide-to="0" class="active"></li>
+                            <li data-target="#Shop2" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid mobilelogo" src="images/logo2mobile.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-xs-12 mobilecontact">
+                                    <h3>ROWDY Barber Shop <br> Berlin-Prenzlauer Berg</h3>
+                                    <div class="choicebtn">
+                                        <div class="btn-group" role="group">
+                                            <button type="button" data-toggle="modal" data-target="#terminprenzl" class="btn btn-primary">Termin Buchen</button>
+                                            <button type="button" onclick="location.href='tel:015209866085';" class="btn btn-primary">Shop anrufen</button>
+                                        </div>
+                                    </div>
+                                    <div class="linkwebsite">
+                                        <div class="animsition">
+                                            <a href="http://rowdy-barber.berlin" class="animsition-link"><h5>rowdy-barber.berlin</h5></a>
+                                        </div>
+                                    </div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/hjbHgADJArs"><i class="fa fa-road"></i> Kollwitzstr. 71</a></li>
+                                        <li class="list-inline-item align-middle"><a href="https://goo.gl/maps/hjbHgADJArs"><i class="fa fa-home"></i> 10435 Berlin</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <div class="row" id="headfootbg">
+                  <div class="col-xs-12 text-xs-center">
+                      <a data-toggle="modal" data-target="#impressum">Impressum</a>
+                  </div>
+                </div>
+
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/3253bd5bda.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
